@@ -1,0 +1,61 @@
+#header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#spacex-logo{
+    height: 150px;
+    cursor: pointer;
+}
+
+#header-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#links-div{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#links-div a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+#shop-header{
+    float: right;
+    margin-right: 40px;
+}
+
+#links-div a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    margin-bottom: -3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+  }
+
+  #links-div a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

@@ -1,0 +1,42 @@
+#tile-1{
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+#tile-2{
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+
+.background{
+    width: 100%;
+    height: 120vh;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Starlink_SLC_40_Desktop_cac54ee8bd.jpg");
+}
+
+.background2{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Haven1_Hero_5_2600x1400_a23f540f5f.jpg");
+    
+}
+
+#home{
+    display: block;
+    flex-direction: column;
+}
