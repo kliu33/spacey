@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spacey/static/css/main.5c8f3867.css",
+    "main.js": "/spacey/static/js/main.4b0f4047.js",
+    "static/media/D-DIN-Bold.otf": "/spacey/static/media/D-DIN-Bold.7bb4b1a4a4621668d12a.otf",
+    "static/media/spacex.png": "/spacey/static/media/spacex.2f5133b1fba3e36f73b0.png",
+    "index.html": "/spacey/index.html",
+    "main.5c8f3867.css.map": "/spacey/static/css/main.5c8f3867.css.map",
+    "main.4b0f4047.js.map": "/spacey/static/js/main.4b0f4047.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c8f3867.css",
+    "static/js/main.4b0f4047.js"
+  ]
+}
