@@ -14,15 +14,18 @@ function Home() {
         <div id="tile-1" ref={tileOneRef}>
             <span className='background'>
                 <div id ='starlink'> 
-                  <p>UPCOMING LAUNCH</p>
+                  <p>RECENT LAUNCH</p>
                   <h2>STARLINK MISSION</h2>
-                  <span id='watch-button'> WATCH </span>
+                  <span id='watch-button'> REWATCH </span>
                 </div>
             </span>
         </div>
         <div id="tile-2"> 
             <span className='background2'>
-                <div id ='content'></div>
+                <div id ='ss'> 
+                  <h2>SPACEX TO LAUNCH VAST’S COMMERCIAL SPACE STATION</h2>
+                  <span id='learn-button'> LEARN MORE </span>
+                </div>
             </span>
         </div>
         <div id="tile-3"> 

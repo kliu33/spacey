@@ -37,9 +37,9 @@ function Header() {
             <NavLink>STARSHIELD</NavLink>
             <NavLink>STARLINK</NavLink>
         </div>
-      </div>
-      <div id='shop-header'>
-          <NavLink>Shop</NavLink>
+        {/* <div id='shop-header'>
+           <NavLink>Shop</NavLink>
+        </div> */}
       </div>
     </div>
   );
