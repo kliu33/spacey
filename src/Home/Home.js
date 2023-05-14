@@ -13,11 +13,20 @@ function Home() {
         <Header />
         <div id="tile-1" ref={tileOneRef}>
             <span className='background'>
-                <div id ='content'></div>
+                <div id ='starlink'> 
+                  <p>UPCOMING LAUNCH</p>
+                  <h2>STARLINK MISSION</h2>
+                  <span id='watch-button'> WATCH </span>
+                </div>
             </span>
         </div>
         <div id="tile-2"> 
             <span className='background2'>
+                <div id ='content'></div>
+            </span>
+        </div>
+        <div id="tile-3"> 
+            <span className='background3'>
                 <div id ='content'></div>
             </span>
         </div>

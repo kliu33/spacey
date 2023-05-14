@@ -8,7 +8,7 @@ function Header() {
   const [header, setHeader] = useState(false);
 
   const changeHeader = () => {
-    if(window.scrollY >= 1000){
+    if(window.scrollY >= 200){
       setHeader(true)
     } else{
       setHeader(false)
