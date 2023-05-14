@@ -1,10 +1,30 @@
 import "./Header.css";
 import spacex from "../imgs/spacex.png"
 import { NavLink } from "react-router-dom/dist";
+import { useState, useEffect } from "react";
 
 function Header() {
+
+  const [header, setHeader] = useState(false);
+
+  const changeHeader = () => {
+    if(window.scrollY >= 1000){
+      setHeader(true)
+    } else{
+      setHeader(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeHeader);
+
+    return () => {
+      window.removeEventListener('scroll', changeHeader);
+    };
+  }, []);
+  
   return (
-    <div id="header">
+    <div className={header ? 'header active' : 'header'}>
       <div id='header-div'>
         <img src={spacex} id="spacex-logo"></img>
         <div id='links-div'>
