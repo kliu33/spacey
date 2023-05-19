@@ -1,13 +1,11 @@
 import Header from "../Header/Header";
 import "./Home.css"
-import { useRef } from 'react';
+import { useInView } from "react-intersection-observer";
+import SS from "../SS/SS";
 
 function Home() {
+    const {ref: tileOneRef, inView: tile1Visible} = useInView({triggerOnce: true})
 
-    const tileOneRef = useRef(null)
-
-    const sectionOne = tileOneRef.current;
-    console.log(sectionOne)
     return (
       <div id="home">
         <Header />
@@ -22,15 +20,13 @@ function Home() {
         </div>
         <div id="tile-2"> 
             <span className='background2'>
-                <div id ='ss'> 
-                  <h2>SPACEX TO LAUNCH VAST’S COMMERCIAL SPACE STATION</h2>
-                  <span id='learn-button'> LEARN MORE </span>
-                </div>
+              <SS />
             </span>
         </div>
         <div id="tile-3"> 
             <span className='background3'>
-                <div id ='content'></div>
+                <div id ='content'>
+                </div>
             </span>
         </div>
       </div>
