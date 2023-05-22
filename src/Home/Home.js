@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import SS from "../SS/SS";
 
 function Home() {
-    const {ref: tileOneRef, inView: tile1Visible} = useInView({triggerOnce: true})
+    const {ref: tileOneRef} = useInView({triggerOnce: true})
 
     return (
       <div id="home">
@@ -20,14 +20,21 @@ function Home() {
         </div>
         <div id="tile-2"> 
             <span className='background2'>
-              <SS />
+              <SS h2={'SPACEX TO LAUNCH VAST’S COMMERCIAL SPACE STATION'} button={'LEARN MORE'}/>
             </span>
         </div>
         <div id="tile-3"> 
             <span className='background3'>
-                <div id ='content'>
-                </div>
+                <SS p={'RECENT'} h2={'STARSHIP FLIGHT TEST'} button={'REWATCH'}/>
             </span>
+        </div>
+        <div id="footer">
+          <p>SPACEY © 2023</p>
+          <a href="https://www.linkedin.com/in/kliu33/" target='_blank' rel="noreferrer">LINKEDIN</a>
+          <a href="https://github.com/kliu33" target='_blank' rel="noreferrer">GITHUB</a>
+          <a href="https://wellfound.com/u/kevin-liu-149" target='_blank' rel="noreferrer">ANGELLIST</a>
+          <a href="https://kaiwen.dev" target='_blank' rel="noreferrer">PORTFOLIO</a>
+          <a href="https://www.instagram.com/kliuuuu/" target='_blank' rel="noreferrer">INSTAGRAM</a>
         </div>
       </div>
     );

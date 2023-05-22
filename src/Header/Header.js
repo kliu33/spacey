@@ -26,7 +26,7 @@ function Header() {
   return (
     <div className={header ? 'header active' : 'header'}>
       <div id='header-div'>
-        <img src={spacex} id="spacex-logo"></img>
+        <img src={spacex} alt='spacex logo' id="spacex-logo"></img>
         <div id='links-div'>
             <NavLink>FALCON 9</NavLink>
             <NavLink>FALCON HEAVY</NavLink>

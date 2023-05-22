@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 
-function SS() {
+function SS({p, h2, button}) {
 
   const { ref: ss, inView: visible } = useInView({
     triggerOnce: true
@@ -9,8 +9,9 @@ function SS() {
   
   return (
     <div id={`${visible ? 'ss-v' : 'ss-nv'}`}> 
-      <h2>SPACEX TO LAUNCH VAST’S COMMERCIAL SPACE STATION</h2>
-      <span id='learn-button' ref={ss}> LEARN MORE</span>
+      {p ? <span id='ache3'>{p}</span> : null}
+      <h2>{h2}</h2>
+      <span id='learn-button' ref={ss}> {button}</span>
     </div>
   );
 }
