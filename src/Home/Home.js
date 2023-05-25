@@ -11,11 +11,7 @@ function Home() {
         <Header />
         <div id="tile-1" ref={tileOneRef}>
             <span className='background'>
-                <div id ='starlink'> 
-                  <p>RECENT LAUNCH</p>
-                  <h2>STARLINK MISSION</h2>
-                  <span id='watch-button'> REWATCH </span>
-                </div>
+              <SS p={'RECENT LAUNCH'} h2={'STARLINK MISSION'} button={"REWATCH"}/>
             </span>
         </div>
         <div id="tile-2"> 
